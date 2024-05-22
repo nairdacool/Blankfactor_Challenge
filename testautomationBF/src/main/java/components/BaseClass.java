@@ -10,7 +10,7 @@ public class BaseClass {
 
     public static WebDriver getDriver() {
         if (driver == null) {
-            System.setProperty("webdriver.chrome.driver", "./src/main/resources/drivers/chromedriver");
+            System.setProperty("webdriver.chrome.driver", "./src/main/resources/drivers/chromedriverIntel");
             driver = new ChromeDriver();
             driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
             driver.manage().window().maximize();
