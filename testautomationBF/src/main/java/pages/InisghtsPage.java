@@ -53,4 +53,9 @@ public class InisghtsPage {
                 })
                 .forEach(System.out::println);
     }
+    public void totalNumberOfPosts(){
+        List<WebElement> allPostsList = driver.findElements(By.cssSelector("h2.heading-4.post-title"));
+        int totalPosts = allPostsList.size();
+        System.out.println("The total number of posts is: " + totalPosts + ". Here you are the names and URLs: ");
+    }
 }

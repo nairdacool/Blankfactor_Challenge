@@ -39,6 +39,8 @@ public class BlankFactorAutomationTest{
         postPage.enterEmail("adrian.trujillo@blankfactor.test.invalid");
         postPage.clickSubscribe();
         driver.navigate().back();
+        insightsPage.scrollToPost();
+        insightsPage.totalNumberOfPosts();
         insightsPage.printAllPostTitlesAndUrls();
     }
 
