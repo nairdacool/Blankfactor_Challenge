@@ -1,0 +1,13 @@
+# Ignore all .idea files
+.idea/
+
+# Ignore node_modules
+node_modules/
+
+# Ignore build directories
+/dist/
+/build/
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
